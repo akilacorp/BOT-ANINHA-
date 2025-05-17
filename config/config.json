@@ -1,0 +1,15 @@
+{
+  "botName": "Aninha",
+  "defaultPersona": "aninha",
+  "prefix": "!",
+  "responseProbability": 0.05,
+  "openRouterSettings": {
+    "apiKey": "SEU-TOKEN",
+    "apiUrl": "https://openrouter.ai/api/v1/chat/completions",
+    "model": "mistralai/mistral-small-3.1-24b-instruct"
+  },
+  "responseDelay": {
+    "min": 1200,
+    "max": 3500
+  }
+}

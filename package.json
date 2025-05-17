@@ -1,0 +1,47 @@
+{
+  "name": "aninha-bot",
+  "version": "1.0.0",
+  "description": "Bot de WhatsApp Aninha com interações realistas",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "api": "node api-server.js",
+    "api-bot": "node index-api.js",
+    "start-api": "node api-server.js",
+    "personality": "node index-new.js",
+    "quickstart": "node start.js",
+    "train": "node train.js",
+    "optimize": "node optimize.js",
+    "setup": "node setup.js",
+    "migrate": "node migrations.js",
+    "import-corpus": "node -e \"require('./lib/corpus-importer').importCorpus(process.argv[1], process.argv[2], { qualityFilter: true })\"",
+    "test-quote": "node test-quote.js",
+    "check-quote": "node check-quote.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "baileys",
+    "aninha"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/boom": "^10.0.1",
+    "@whiskeysockets/baileys": "^6.7.5",
+    "axios": "^1.9.0",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "csv-parser": "^3.0.0",
+    "express": "^4.21.2",
+    "fast-levenshtein": "^3.0.0",
+    "fuse.js": "^7.0.0",
+    "natural": "^6.10.4",
+    "pino": "^8.17.2",
+    "puppeteer": "^22.15.0",
+    "qrcode-terminal": "^0.12.0",
+    "sqlite3": "^5.1.7",
+    "whatsapp-web.js": "^1.28.0"
+  }
+}
